@@ -39,7 +39,7 @@
     async asyncData({ $axios }) {
       try {
         // ทำ HTTP GET request เพื่อดึงข้อมูลทั้งหมดของสินค้า
-        const allProductsResponse = await $axios.get(`https://peach-bat-tutu.cyclic.app/api/products`);
+        const allProductsResponse = await $axios.get(`https://peach-bat-tutu.cyclic.app/products`);
         const allProducts = allProductsResponse.data;
   
         // แปลง ObjectID ให้เป็น String
